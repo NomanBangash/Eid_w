@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0,0,0,0.5)), url('/Images/eid\ mu.jpg');
+  }
+  .birthdayCard {
+    position: relative;
+    width: 250px;
+    height:350px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 4s;
+  }
+  
+  .birthdayCard:hover {
+      transform: perspective(2500px) rotate(5deg);
+      box-shadow: inset 100px 20px 100px rgba(0,0,0,.15), 0 10px 100px rgba(0,0,0,0.3);
+  }
+  
+  .birthdayCard:hover .cardFront {
+    transform: rotateY(-160deg); 
+  }
+  
+  .birthdayCard:hover .front-text {
+    display: none;
+  }
+
+  .cardFront {
+    position: relative;
+    background-color: #fff;
+    width: 250px;
+    height:350px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
+    transition: .4s;
+    background: url('/Images/eid\ front.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .front-text{
+    display: flex;
+    justify-content: center;
+    min-height:100%;
+    text-transform: uppercase;
+  }
+  
+  .happy, .toyou {
+    position: relative;
+    font-family: didot;
+    text-align: center;
+    backface-visibility: hidden;
+    font-size: 30px; 
+  }
+  
+  .happy {
+    top:198px;
+  }
+  
+  .toyou {
+    top:123px;
+  }
+  
+  .bday {
+    position: relative;
+    font-family: arial;
+    font-size: 35px;
+    text-align: center;
+    top:166px;
+    text-transform: uppercase;
+  }
+  
+  
+  .cardInside {
+    position: absolute;
+    background-color: #fff;
+    width: 250px;
+    height:350px;
+    z-index:-1;
+    left:0;
+    top:0;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+  }
+  
+  .inside-text {
+    position: relative;
+    top:-100px;
+    transform: scale(0.7);
+  }
+  
+  .wishes {
+    position: relative;
+    top:-00px;
+    margin: 25px;
+  }
+  
+  p {
+    color: #333;
+  }
+  
+  .name {
+    margin-left:150px;
+  }
