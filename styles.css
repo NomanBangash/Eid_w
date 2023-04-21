@@ -9,10 +9,6 @@ body {
     align-items: center;
     justify-content: center;
     height:100vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0,0,0,0.5)), url('/Images/eid\ mu.jpg');
   }
   .birthdayCard {
     position: relative;
@@ -46,10 +42,6 @@ body {
     transform-origin: left;
     box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
     transition: .4s;
-    background: url('/Images/eid\ front.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .front-text{
     display: flex;
